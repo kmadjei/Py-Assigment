@@ -5,9 +5,10 @@ def get_course_marks():
     Get the details of the courses the user has completed and validate the data.
     """
 
+    print("\nHow many courses did you complete?")
     while True:
         try:
-            num_of_courses = int(input("Please enter the number of courses you are taking:  "))
+            num_of_courses = int(input("Please enter the number of completed courses :  "))
             if num_of_courses < 0 :
                 raise TypeError(f"{num_of_courses} cannot be below 0")
             else:
