@@ -22,7 +22,7 @@ During the coding phase, each functionality was tested for the required feedback
 ## Credits
 
 ### Content
-- The instructions for the python assignment was provided by [@anmarjarjees], CBC Instructor.
+- The instructions for the python assignment was provided by [@anmarjarjees](https://github.com/anmarjarjees), CBC Instructor.
 - The entire program was written by using the knowledge gain from the Python Essentials lessons.
 
 ### Acknowledgements
