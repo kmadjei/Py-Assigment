@@ -13,6 +13,8 @@ will then proceed to calculating the overall grade after validating the data pro
 
 ## Testing
 
+During the coding phase, each functionality was tested for the required feedback before progressing further into the project.
+
 **User's Perspective**
     > As a user, when I run the program I should receive feedback that shows the program is working
     > When I enter incorrect data, the program should give me another chance to correct myself
@@ -25,4 +27,4 @@ will then proceed to calculating the overall grade after validating the data pro
 
 ### Acknowledgements
 
-- I received inspiration for this project from X
+- I am grateful for the help and support I am receiving from the CBC staff as I am transitioning to a new career in the IT field as a Software Developer.
