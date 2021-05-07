@@ -36,7 +36,7 @@ def get_course_marks():
                 if newMark < 0:
                     raise TypeError
                 else:
-                    # appends mark to the object
+                    # appends mark to the object  and goes back to for loop
                     course_marks[f"Course {course + 1}"] = newMark
                     break   
             except TypeError:
