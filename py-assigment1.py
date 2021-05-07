@@ -14,7 +14,7 @@ def get_course_marks():
             if courses < 0 :
                 raise TypeError(f"{num_of_courses} cannot be below 0")
             else:
-                #break loop
+                #break loop if there are no errors
                 break   
         except TypeError as e:
             print(f"Invalid data: {e}. Please provide a positive number.\n")
@@ -36,6 +36,7 @@ def get_course_marks():
                 if newMark < 0:
                     raise TypeError
                 else:
+                    # if there are no errors
                     # appends mark to the object  and goes back to for loop
                     course_marks[f"Course {course + 1}"] = newMark
                     break   
