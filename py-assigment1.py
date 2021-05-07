@@ -6,34 +6,43 @@ def get_course_marks():
     """
 
     print("\nHow many courses did you complete?")
+    # loop to validate user data
     while True:
         try:
-            num_of_courses = int(input("Please enter the number of completed courses :  "))
-            if num_of_courses < 0 :
+            num_of_courses = input("Please enter the number of completed courses :  ")
+            courses = int(num_of_courses)
+            if courses < 0 :
                 raise TypeError(f"{num_of_courses} cannot be below 0")
             else:
+                #break loop
                 break   
         except TypeError as e:
-            print(f"Invalid data: {e}. Please enter an actual number.\n")
+            print(f"Invalid data: {e}. Please provide a positive number.\n")
         except ValueError:
-            print(f"Invalid entry: {num_of_courses}. Please provide an integer number.\n")
+            print(f"Invalid entry: {num_of_courses}. Please enter an integer number.\n")
 
+    # empty object/dictionary for course marks
     course_marks = {}
 
-    for course in range(num_of_courses):
+    #loop to get the grades
+    for course in range(courses):
         
+        #Loop to validate data
         while True:
             try:
-                mark = float(input(f"Please enter your marks for course {course + 1}: "))
-                if mark < 0:
-                    raise ValueError
+                mark = input(f"Please enter your marks for course {course + 1}: ")
+                # converts marks to float and validate data
+                newMark = float(mark)
+                if newMark < 0:
+                    raise TypeError
                 else:
-                    course_marks[f"Course {course + 1}"] = mark
+                    # appends mark to the object
+                    course_marks[f"Course {course + 1}"] = newMark
                     break   
             except TypeError:
-                print(f"Invalid data: {mark}. Please enter an actual number.\n")
-            except ValueError:
                 print(f"You entered: {mark}. Your marks cannot be negative. Please Try again.\n")
+            except ValueError:
+                print(f"Invalid data: {mark}. Please enter an actual number.\n")
 
     print(f"\nYour marks are: {course_marks}.\n" )
     return course_marks
